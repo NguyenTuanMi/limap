@@ -24,6 +24,28 @@ In this project, we provide interfaces for various geometric operations on 2D/3D
 * CUDA (for deep learning based detectors/matchers)
 * System dependencies [[Command line](./misc/install/dependencies.md)]
 
+**If encounter dependencies's errors while installing system dependencies**
+```
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ libsqlite3-dev : Depends: libsqlite3-0 (= 3.37.2-2) but 3.37.2-2ubuntu0.3 is to be installed
+ libssl-dev : Depends: libssl3 (= 3.0.2-0ubuntu1) but 3.0.2-0ubuntu1.15 is to be installed
+ libunwind-dev : Depends: libunwind8 (= 1.3.2-2build2) but 1.3.2-2build2.1 is to be installed
+ qtbase5-dev : Depends: libqt5core5a (= 5.15.3+dfsg-2) but 5.15.3+dfsg-2ubuntu0.2 is to be installed
+               Depends: libqt5dbus5 (= 5.15.3+dfsg-2) but 5.15.3+dfsg-2ubuntu0.2 is to be installed
+               Depends: libqt5gui5 (= 5.15.3+dfsg-2) but 5.15.3+dfsg-2ubuntu0.2 is to be installed
+               Depends: libqt5network5 (= 5.15.3+dfsg-2) but 5.15.3+dfsg-2ubuntu0.2 is to be installed
+               Depends: libqt5widgets5 (= 5.15.3+dfsg-2) but 5.15.3+dfsg-2ubuntu0.2 is to be installed
+E: Unable to correct problems, you have held broken packages.
+```
+Please follow this link to solve it [[Solving Dependencies](https://askubuntu.com/questions/1562533/broken-packages-after-22-04-24-04-upgrade)]
+
+
 To install the LIMAP Python package:
 ```
 git submodule update --init --recursive
